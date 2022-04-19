@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f39c12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form__control textarea,
+.form__control .submit {
+  padding: 8px 12px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  outline: #f39c12;
+  color: #925d07;
+}
+
+.form__control textarea {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.form__control .submit {
+  padding: 8px 12px;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
