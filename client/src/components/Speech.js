@@ -1,10 +1,16 @@
-import React from "react";
+import { useState } from "react";
 import { useSpeechSynthesis } from "react-speech-kit";
 import "../styles/Speech.scss";
 
 const Speech = () => {
-  const [value, setValue] = React.useState("");
+  const [value, setValue] = useState("");
   const { speak } = useSpeechSynthesis();
+
+  console.log("value => " + value);
+  console.log("setValue => " + setValue);
+  console.log("spesch => " + speak);
+  console.log("useSpeechSynthesis => " + useSpeechSynthesis);
+
   return (
     <div className="speech">
       <div className="group">
