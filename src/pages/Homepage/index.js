@@ -11,8 +11,6 @@ function Homepage() {
         <div class="jumbotron p-3 mt-1">
           <h1>Hello,</h1>
           <p>
-            This is a simple hero unit, a simple jumbotron-style component for
-            calling extra attention to featured content or information.
           </p>
           <p>
           <Link className="btn btn-danger mx-2" to="/text-to-speech" >Text to Speech</Link>
