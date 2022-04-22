@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use('/uploads',express.static('uploads'))
 
-
 // create router for text to speech api
 app.post("/text-to-speech", (req, res) => {
   const lang = req.body.lang;
@@ -34,7 +33,6 @@ app.post("/text-to-speech", (req, res) => {
       success:false,
     })
   }
-
 });
 
 // app.post("/", (req, res) => {
