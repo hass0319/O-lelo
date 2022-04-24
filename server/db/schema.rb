@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_21_192435) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_24_050215) do
+  create_table "speech_converts", force: :cascade do |t|
+    t.string "title"
+    t.string "text"
+    t.string "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "text_converts", force: :cascade do |t|
+    t.string "title"
+    t.string "text"
+    t.string "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "text_speech_converts", force: :cascade do |t|
+    t.string "title"
+    t.string "text"
+    t.string "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"

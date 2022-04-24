@@ -20,5 +20,5 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-http://0.0.0.0:3000
+`bin/rails s -b 0.0.0.0`
 * ...
