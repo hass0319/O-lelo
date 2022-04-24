@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSpeechSynthesis } from "react-speech-kit";
-import "../styles/Speech.scss";
+import "./Speech.scss";
 
 const Speech = () => {
   const [value, setValue] = useState("");
