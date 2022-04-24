@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
-import "../styles/Voice.scss";
+import "./Voice.scss";
 
 function Voice() {
 
