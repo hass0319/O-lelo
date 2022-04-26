@@ -1,0 +1,110 @@
+.nav {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  display: flex;
+  flex-flow: row;
+  height: 3.125rem;
+  text-decoration: none;
+  text-decoration: none;
+  background-color: #38444d;
+  justify-content: space-between;
+  // background-color: rgb(241 238 234);
+
+  .logo-image {
+    width: 6.25rem;
+    height: 3.125rem;
+    margin: 0 1rem 0 0;
+    border-radius: 25%;
+
+    .img_log {
+      width: 6.25rem;
+      object-fit: fill;
+      height: 3.125rem;
+    }
+  }
+
+  .nav1 {
+    width: 60vw;
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 1.0625rem 0 0 0;
+  }
+
+  .nav2 {
+    width: 40vw;
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: -webkit-right;
+    margin: 1.0625rem 1.5rem 0 0;
+  }
+
+  ul a {
+    padding: 0 0.5rem;
+  }
+
+  .dropbtn {
+    border: none;
+    min-width: 7rem;
+    background-color: inherit;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    z-index: 1;
+    display: none;
+    min-width: 7rem;
+    position: absolute;
+    background-color: rgba(54, 155, 213, 30%);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 30%);
+  }
+
+  .dropdown-content a {
+    color: black;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgba(125, 15, 15, 10%);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #e1e4c8;
+  }
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '▼';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
