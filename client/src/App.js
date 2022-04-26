@@ -1,17 +1,21 @@
 // import logo from './logo.svg';
-import './App.css';
-import axios from 'axios'
+import './App.scss';
 import Home from './components/Home';
-import Voice from './components/Voice';
+import Text from './components/Text';
 import Login from './components/login';
 import Speech from './components/Speech';
-import Signup from './components/signup';
+import Signup from './components/Signup';
+import About from './components/About';
+import Account from './components/Account';
+import Navbar from './components/Navbar';
+
+import axios from 'axios'
 import { useState, useEffect } from 'react';
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
 
-function App() {
+export default function App() {
   const [state, setState] = useState({
     isLoggedIn: false,
     user: {}
@@ -49,6 +53,7 @@ function App() {
   return (
     <div>
       <Router>
+        <Navbar />
         <Routes>
 
           <Route exact path='/' element={<Home />} />
@@ -56,13 +61,14 @@ function App() {
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/signup' element={<Signup />} />
 
-          <Route exact path='/voice' element={<Voice />} />
-          <Route exact path='/speech' element={<Speech />} />
+          <Route exact path='/voice' element={<Speech />} />
+          <Route exact path='/speech' element={<Text />} />
+
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/account' element={<Account />} />
 
         </Routes>
       </Router>
     </div>
   );
 };
-
-export default App;
