@@ -73,3 +73,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- npm install --legacy-peer-deps -->
 <!-- cd final_project/o-lelo/client -->
 <!-- cd final_project/o-lelo/server -->
+<!-- bin/rails s -b 0.0.0.0 -p 3001 -->
