@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Signup() {
+export default function Signup() {
   const [state, setState] = useState({
     username: '',
     email: '',
@@ -109,10 +109,10 @@ function Signup() {
           value={password_confirmation}
           onChange={handleChange}
         />
-
         <button
           placeholder="submit"
           type="submit"
+          onClick={handleSubmit}
         >
           Sign Up
         </button>
@@ -121,4 +121,3 @@ function Signup() {
     </div>
   );
 }
-export default Signup;
