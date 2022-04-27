@@ -1,2 +1,0 @@
-class TextConvert < ApplicationRecord
-end

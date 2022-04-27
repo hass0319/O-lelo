@@ -1,2 +1,0 @@
-class SpeechConvert < ApplicationRecord
-end
