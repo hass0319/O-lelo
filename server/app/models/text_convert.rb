@@ -1,0 +1,2 @@
+class TextConvert < ApplicationRecord
+end
