@@ -66,7 +66,7 @@ export default function Speech() {
 
     <div className="microphone-wrapper">
       <div className="title">
-        <h2>Text To Speech Converter</h2>
+        <h2>Speech To text Converter</h2>
       </div>
       <div className="mircophone-container">
         <div
@@ -74,7 +74,7 @@ export default function Speech() {
           ref={microphoneRef}
           onClick={handleListing}
         >
-          🎙{/* <img src={"🎙"} alt="microPhoneIcon" className="microphone-icon" /> */}
+          <img src={"🎙"} alt="microPhoneIcon" className="microphone-icon" />
         </div>
         <div className="microphone-status">
           {isListening ? "Listening........." : "Click to start Listening"}
